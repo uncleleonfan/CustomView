@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomView.iml" filepath="$PROJECT_DIR$/CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/spinner/spinner.iml" filepath="$PROJECT_DIR$/spinner/spinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/view/view.iml" filepath="$PROJECT_DIR$/view/view.iml" />
     </modules>
   </component>
 </project>
