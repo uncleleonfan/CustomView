@@ -8,17 +8,19 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.ImageView.ScaleType;
 
 public class Banner extends RelativeLayout {
 	
 	protected static final String TAG = "MainActivity";
 
+	private static final int LOOP_INTERVAL = 1000;
 	private ViewPager mViewPager;
 	private TextView mTitle;
 	private int[] mImages = {R.mipmap.news1, R.mipmap.news2, R.mipmap.news3,
@@ -54,6 +56,20 @@ public class Banner extends RelativeLayout {
 
     private void initEvent() {
     	mViewPager.setOnPageChangeListener(mOnPageChangeListener);
+		mViewPager.setOnTouchListener(new OnTouchListener() {
+			@Override
+			public boolean onTouch(View v, MotionEvent event) {
+				switch (event.getAction()) {
+					case MotionEvent.ACTION_DOWN:
+						stopLoop();
+						break;
+					case MotionEvent.ACTION_UP:
+						startLoop();
+						break;
+				}
+				return true;
+			}
+		});
 	}
     
     private OnPageChangeListener mOnPageChangeListener = new OnPageChangeListener() {
@@ -219,5 +235,32 @@ public class Banner extends RelativeLayout {
 	};
 
 
+	@Override
+	protected void onAttachedToWindow() {
+		super.onAttachedToWindow();
+		startLoop();
+	}
 
+	private Runnable mTicker = new Runnable() {
+		@Override
+		public void run() {
+			int next = mViewPager.getCurrentItem() + 1;
+			mViewPager.setCurrentItem(next);
+			startLoop();
+		}
+	};
+
+	private void startLoop() {
+		postDelayed(mTicker, LOOP_INTERVAL);
+	}
+
+	@Override
+	protected void onDetachedFromWindow() {
+		super.onDetachedFromWindow();
+		stopLoop();
+	}
+
+	private void stopLoop() {
+		removeCallbacks(mTicker);
+	}
 }
