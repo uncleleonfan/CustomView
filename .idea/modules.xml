@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/progressbar/progressbar.iml" filepath="$PROJECT_DIR$/progressbar/progressbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/scroll/scroll.iml" filepath="$PROJECT_DIR$/scroll/scroll.iml" />
       <module fileurl="file://$PROJECT_DIR$/slidelock/slidelock.iml" filepath="$PROJECT_DIR$/slidelock/slidelock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingmenu/slidingmenu.iml" filepath="$PROJECT_DIR$/slidingmenu/slidingmenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/spinner/spinner.iml" filepath="$PROJECT_DIR$/spinner/spinner.iml" />
       <module fileurl="file://$PROJECT_DIR$/switchtoggle/switchtoggle.iml" filepath="$PROJECT_DIR$/switchtoggle/switchtoggle.iml" />
       <module fileurl="file://$PROJECT_DIR$/toucheventflow/toucheventflow.iml" filepath="$PROJECT_DIR$/toucheventflow/toucheventflow.iml" />
