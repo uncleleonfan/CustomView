@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/spinner/spinner.iml" filepath="$PROJECT_DIR$/spinner/spinner.iml" />
       <module fileurl="file://$PROJECT_DIR$/switchtoggle/switchtoggle.iml" filepath="$PROJECT_DIR$/switchtoggle/switchtoggle.iml" />
       <module fileurl="file://$PROJECT_DIR$/toucheventflow/toucheventflow.iml" filepath="$PROJECT_DIR$/toucheventflow/toucheventflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/touchlistener/touchlistener.iml" filepath="$PROJECT_DIR$/touchlistener/touchlistener.iml" />
       <module fileurl="file://$PROJECT_DIR$/view/view.iml" filepath="$PROJECT_DIR$/view/view.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewgroup/viewgroup.iml" filepath="$PROJECT_DIR$/viewgroup/viewgroup.iml" />
     </modules>
