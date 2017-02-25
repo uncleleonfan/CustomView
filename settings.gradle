@@ -1,1 +1,1 @@
-include ':spinner', ':view', ':progressbar'
+include ':spinner', ':view', ':progressbar', ':switchtoggle'
