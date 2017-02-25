@@ -1,1 +1,1 @@
-include ':spinner', ':view', ':progressbar', ':switchtoggle', ':viewgroup', ':crosslayout'
+include ':spinner', ':view', ':progressbar', ':switchtoggle', ':viewgroup', ':crosslayout', ':toucheventflow'
