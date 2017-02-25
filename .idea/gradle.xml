@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/spinner" />
             <option value="$PROJECT_DIR$/switchtoggle" />
             <option value="$PROJECT_DIR$/view" />
+            <option value="$PROJECT_DIR$/viewgroup" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
