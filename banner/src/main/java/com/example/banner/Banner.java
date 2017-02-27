@@ -19,7 +19,6 @@ import android.widget.TextView;
 public class Banner extends RelativeLayout {
 	
 	protected static final String TAG = "MainActivity";
-
 	private static final int LOOP_INTERVAL = 1000;
 	private ViewPager mViewPager;
 	private TextView mTitle;

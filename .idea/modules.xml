@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/toucheventflow/toucheventflow.iml" filepath="$PROJECT_DIR$/toucheventflow/toucheventflow.iml" />
       <module fileurl="file://$PROJECT_DIR$/touchlistener/touchlistener.iml" filepath="$PROJECT_DIR$/touchlistener/touchlistener.iml" />
       <module fileurl="file://$PROJECT_DIR$/view/view.iml" filepath="$PROJECT_DIR$/view/view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/viewdraghelperdemo/viewdraghelperdemo.iml" filepath="$PROJECT_DIR$/viewdraghelperdemo/viewdraghelperdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/viewgroup/viewgroup.iml" filepath="$PROJECT_DIR$/viewgroup/viewgroup.iml" />
     </modules>
   </component>
