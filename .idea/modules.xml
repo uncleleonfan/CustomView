@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/CustomView.iml" filepath="$PROJECT_DIR$/CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/banner/banner.iml" filepath="$PROJECT_DIR$/banner/banner.iml" />
       <module fileurl="file://$PROJECT_DIR$/click/click.iml" filepath="$PROJECT_DIR$/click/click.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clock/clock.iml" filepath="$PROJECT_DIR$/clock/clock.iml" />
       <module fileurl="file://$PROJECT_DIR$/crosslayout/crosslayout.iml" filepath="$PROJECT_DIR$/crosslayout/crosslayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventconflict/eventconflict.iml" filepath="$PROJECT_DIR$/eventconflict/eventconflict.iml" />
       <module fileurl="file://$PROJECT_DIR$/progressbar/progressbar.iml" filepath="$PROJECT_DIR$/progressbar/progressbar.iml" />
