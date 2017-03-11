@@ -102,7 +102,6 @@ public class MyView extends View {
         //如果特殊需求，view需要自己控制自己的宽高而不管父容器对view的期望，则调用setMeasuredDimension
         //setMeasuredDimension(50, 50);
         //super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
         Log.d(TAG, "onMeasure: ");
     }
 
