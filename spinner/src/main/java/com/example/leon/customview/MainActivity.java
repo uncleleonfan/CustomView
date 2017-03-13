@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView mArrow;
 
     private List<String> mDataList;
+    private PopupWindow mPopupWindow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,17 +49,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void popupList() {
         int height = getResources().getDimensionPixelSize(R.dimen.popup_height);
-        PopupWindow popupWindow = new PopupWindow(mEditText.getWidth(), height);
+        if (mPopupWindow == null) {
+            mPopupWindow = new PopupWindow(mEditText.getWidth(), height);
 //        TextView textView = new TextView(this);
 //        textView.setBackgroundColor(Color.BLUE);
 //        popupWindow.setContentView(textView);
-        ListView listView = new ListView(this);
-        listView.setBackgroundResource(R.mipmap.listview_background);
-        listView.setAdapter(mBaseAdapter);
-        popupWindow.setContentView(listView);
-        popupWindow.setOutsideTouchable(true);
-        popupWindow.setFocusable(true);
-        popupWindow.showAsDropDown(mEditText);
+            ListView listView = new ListView(this);
+            listView.setBackgroundResource(R.mipmap.listview_background);
+            listView.setAdapter(mBaseAdapter);
+            mPopupWindow.setContentView(listView);
+            mPopupWindow.setOutsideTouchable(true);
+            mPopupWindow.setFocusable(true);
+        }
+        mPopupWindow.showAsDropDown(mEditText);
 
     }
 
