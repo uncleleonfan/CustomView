@@ -43,11 +43,11 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener mOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            popupList();
+            showPopupWindow();
         }
     };
 
-    private void popupList() {
+    private void showPopupWindow() {
         int height = getResources().getDimensionPixelSize(R.dimen.popup_height);
         if (mPopupWindow == null) {
             mPopupWindow = new PopupWindow(mEditText.getWidth(), height);
@@ -62,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
             mPopupWindow.setFocusable(true);
         }
         mPopupWindow.showAsDropDown(mEditText);
-
     }
 
     private BaseAdapter mBaseAdapter = new BaseAdapter() {

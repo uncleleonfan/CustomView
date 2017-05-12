@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 public class CrossLayout extends ViewGroup {
 
-	private boolean isStartLeft = false;
+	private boolean isStartLeft = true;
 
 	public CrossLayout(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -50,21 +50,17 @@ public class CrossLayout extends ViewGroup {
 		for (int i = 0; i < getChildCount(); i++) {
 			View child = getChildAt(i);
 			int left = 0;
-			if (isStartLeft) {
-				if (i % 2 ==0) {
-					//摆左边
-					left = 0;
-				} else {
-					//i是奇数摆右边
-					left = getMeasuredWidth() - child.getMeasuredWidth();
+			if (isStartLeft) {//从左边开始布局
+				if (i % 2 ==0) {//偶数
+					left = 0;////摆左边
+				} else {//i是奇数
+					left = getMeasuredWidth() - child.getMeasuredWidth();//摆右边
 				}
 			} else {
-				if (i % 2 ==0) {
-					//偶数摆右边
-					left = getMeasuredWidth() - child.getMeasuredWidth();
-				} else {
-					//i是奇数左边
-					left = 0;
+				if (i % 2 ==0) {//偶数
+					left = getMeasuredWidth() - child.getMeasuredWidth();//摆右边
+				} else {//i是奇数
+					left = 0;//摆左边
 				}
 			}
 			
